@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Delivery App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍕 Pizza Delivery</h1>
+
+    <form id="order-form">
+      <h2>Select Pizzas</h2>
+      <label><input type="checkbox" name="pizza" value="Margherita" data-price="200"> Margherita - ₹200</label><br>
+      <label><input type="checkbox" name="pizza" value="Farmhouse" data-price="300"> Farmhouse - ₹300</label><br>
+      <label><input type="checkbox" name="pizza" value="Peppy Paneer" data-price="250"> Peppy Paneer - ₹250</label><br>
+      <label><input type="checkbox" name="pizza" value="Mexican Green Wave" data-price="280"> Mexican Green Wave - ₹280</label>
+
+      <h2>Delivery Details</h2>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="address" placeholder="Delivery Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="order-summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
